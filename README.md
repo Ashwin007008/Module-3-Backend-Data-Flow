@@ -20,21 +20,18 @@ the concepts you learn always connect to how a real backend is actually built.
 
 ---
 
-## How the assignments are organised
+## What is in this repo
 
-Each assignment lives in its own folder, named after its learning unit. Inside each
-folder you get everything you need to start:
+This repository contains the **starter code for one assignment**, at the root. Everything
+you need to begin is right here:
 
 ```
-<learning-unit>/
-  README.md        ← what to do, how to run, how to submit
-  question.md      ← the full brief (story, tasks, examples)
-  package.json     ← dependencies and the "npm start" script
-  ...starter files with TODOs for you to complete
+README.md        ← the full brief: what to do, how to run, how to submit
+package.json     ← dependencies and the "npm start" script
+...starter files with TODOs for you to complete
 ```
 
-> Only edit the files the brief tells you to. Read `README.md` first, then `question.md`
-> for the complete details.
+> Read `README.md` for the complete details, and only edit the files it tells you to.
 
 ---
 
@@ -51,12 +48,12 @@ rubric (an automated AI reviewer plus, where needed, a mentor).
 The flow is the same every time:
 
 1. **Create your own repository** for the assignment (follow your cohort's instructions),
-   and copy the relevant assignment folder from here into it. The starter stays untouched.
+   and copy this starter code into it. This starter repo stays untouched.
 2. **In your repo, create a branch** for your work, e.g. `git checkout -b lu16-streams`
    (committing straight to `main` is fine too if that is what your cohort uses).
 3. **Install dependencies** inside the assignment folder: `npm install`.
 4. **Run it** to make sure it starts: `npm start`.
-5. **Implement the TODOs** described in that assignment's `README.md` / `question.md`.
+5. **Implement the TODOs** described in the `README.md`.
 6. **Test locally** until the behaviour matches the brief's examples.
 7. **Commit and push** to your own repo:
    ```bash
@@ -88,7 +85,7 @@ practice, but the **description itself is not part of the grade**.
 
 - **Do not commit `node_modules/`.** Run `npm install` locally instead.
 - Keep commits small and meaningful.
-- If something is unclear, re-read `question.md` before asking — the examples usually
+- If something is unclear, re-read the `README.md` before asking — the examples usually
   answer it.
 
 Happy building.
