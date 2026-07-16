@@ -2,9 +2,9 @@
 
 ## Overview
 
-This API has become annoying in most expensive way possible: not broken enough to force rewrite, but inconsistent enough to slow every client team that touches it.
+This API has become expensive in quiet way: not broken enough to force a rewrite, but inconsistent enough to slow every client team that touches it.
 
-One route sounds like handler name. Another returns a different success shape. A failure might give useful signal, or might dump internal detail. A list returns data, but not enough information to continue confidently. None of these issues look dramatic alone. Together, they make the contract hard to trust.
+One route sounds like a handler name. Another returns a different success shape. A failure might give useful signal, or might dump internal detail. A list returns data, but not enough information to continue confidently. None of these issues look dramatic alone. Together, they make the contract hard to trust.
 
 Your job is to clean up that contract.
 
@@ -36,10 +36,10 @@ npm start
 ## Useful Hints
 
 - Let **HTTP method** carry action. Let **URI** name resource.
-- If one route returns raw array and another returns `{ post }`, client already pays unnecessary parsing cost.
+- If one route returns a raw array and another returns `{ post }`, client already pays unnecessary parsing cost.
 - List response should usually return `data` plus some `meta`.
 - Error response should help client act, but should not expose stack trace, fake DB text, or internal file detail.
-- If client sends very large `limit`, backend should still protect itself.
+- If client sends a very large `limit`, backend should still protect itself.
 - If one route is cleaned up but nearby routes still follow old pattern, contract is still weak.
 
 ## Good Audit Questions
