@@ -2,7 +2,11 @@
 
 ## Overview
 
-Refactor inherited Express API so contract becomes predictable.
+This API has become annoying in most expensive way possible: not broken enough to force rewrite, but inconsistent enough to slow every client team that touches it.
+
+One route sounds like handler name. Another returns a different success shape. A failure might give useful signal, or might dump internal detail. A list returns data, but not enough information to continue confidently. None of these issues look dramatic alone. Together, they make the contract hard to trust.
+
+Your job is to clean up that contract.
 
 You are **not** adding new business capability. You are improving:
 - route design
