@@ -1,12 +1,17 @@
 # Project Artifact - API Design Best Practices
 
-You inherited an API that works, but contract is messy:
-- verb-based routes like `GET /getPosts`, `POST /createPost`, `POST /likePost/:id`
-- mixed success bodies like raw arrays, `{ post }`, `{ ok: true }`
-- inconsistent and unsafe error responses
-- list endpoint has no pagination metadata
+Your frontend team has started a new ritual.
 
-Refactor it so clients can understand API by pattern, not by memorising exceptions.
+Every time they open this API, they guess first.
+
+- Is listing posts `GET /getPosts` or something else?
+- Will create return raw JSON, `{ post }`, or `{ ok: true }`?
+- If a route fails, will it send a useful error or a mini server autopsy?
+- If a list has more results, how is client supposed to know?
+
+Nothing is fully broken. That is what makes this dangerous. The API works just enough to survive, while quietly teaching every client a different rule.
+
+Your task is to refactor this API so it stops feeling like a collection of handlers and starts feeling like a real backend contract.
 
 ## Starter Repo
 
