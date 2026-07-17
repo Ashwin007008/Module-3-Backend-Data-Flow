@@ -1,11 +1,13 @@
-# Repository Pattern Assignment Starter
+# Repository Pattern Assignment
 
-Small community-post API domain. Services currently access the in-memory store directly. Refactor this codebase behind a repository boundary.
+Refactor this small community-platform API so services depend on a repository boundary instead of the in-memory store.
 
-## Student task
+## Run
 
-Create a repository exposing `findAll`, `findById`, `create`, `update`, and `remove`. Rewire services to use repository methods without changing controller behavior or service business rules.
+```bash
+npm start
+```
 
-Keep the store private to the repository. `findAll` must return a copy, IDs must be generated inside the repository, and missing records must use the documented return shapes.
+Inspect the existing service and store before changing code. Implement the assignment described in the platform question. Keep routes, controllers, response shapes, and business behavior unchanged.
 
-No tests or platform instructions are included in this repository. Use the assignment brief and inspect the existing code to decide where each responsibility belongs.
+The starter intentionally contains the pre-refactor design. Do not add tests, specs, or platform-only assignment files to this repository.
